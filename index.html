@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Corner Coffee Shop</title>
+    <meta name="description" content="A cozy coffee shop serving espresso, latte, and fresh pastries. Open daily from 6 AM to 8 PM.">
+    <meta name="keywords" content="coffee shop, espresso, latte, pastries, breakfast, cafe">
+    <meta name="author" content="Cozy Corner Coffee Shop">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cozy Corner Coffee Shop">
+    <meta property="og:description" content="A cozy coffee shop serving espresso, latte, and fresh pastries. Open daily from 6 AM to 8 PM.">
+    <meta property="og:image" content="assets/images/coffee-hero.jpg">
+    <meta property="og:url" content="https://abhinavpadige4.github.io/coffee-shop-site/">
+    <meta property="og:type" content="website">
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Cozy Corner Coffee Shop",
+      "image": "assets/images/coffee-hero.jpg",
+      "@id": "",
+      "url": "https://abhinavpadige4.github.io/coffee-shop-site/",
+      "telephone": "+1-555-123-4567",
+      "priceRange": "$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Coffee Street",
+        "addressLocality": "Seattle",
+        "postalCode": "98101",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "47.6062",
+        "longitude": "-122.3321"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "06:00",
+          "closes": "20:00"
+        }
+      ],
+      "menu": "https://abhinavpadige4.github.io/coffee-shop-site/#menu",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Menu",
+        "itemListElement": [
+          {
+            "@type": "MenuItem",
+            "name": "Espresso",
+            "description": "Rich and bold single shot espresso",
+            "offers": {
+              "@type": "Offer",
+              "price": "2.50",
+              "priceCurrency": "USD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Latte",
+            "description": "Smooth espresso with steamed milk",
+            "offers": {
+              "@type": "Offer",
+              "price": "4.00",
+              "priceCurrency": "USD"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Croissant",
+            "description": "Flaky butter croissant",
+            "offers": {
+              "@type": "Offer",
+              "price": "3.00",
+              "priceCurrency": "USD"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to content -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/logo.svg" alt="Cozy Corner Coffee Shop logo">
+            </div>
+            <nav aria-label="Primary navigation">
+                <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list" id="primary-navigation">
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#hours">Hours</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1>Cozy Corner Coffee Shop</h1>
+                <p>Where every cup tells a story</p>
+                <a href="#menu" class="btn-primary">See Our Menu</a>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu" id="menu">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div class="menu-grid">
+                    <article class="menu-item">
+                        <img src="assets/images/espresso.jpg" alt="Espresso cup">
+                        <div class="menu-item-content">
+                            <h3>Espresso</h3>
+                            <p class="menu-item-description">Rich and bold single shot espresso</p>
+                            <span class="price">$2.50</span>
+                        </div>
+                    </article>
+                    <article class="menu-item">
+                        <img src="assets/images/latte.jpg" alt="Latte art">
+                        <div class="menu-item-content">
+                            <h3>Latte</h3>
+                            <p class="menu-item-description">Smooth espresso with steamed milk</p>
+                            <span class="price">$4.00</span>
+                        </div>
+                    </article>
+                    <article class="menu-item">
+                        <img src="assets/images/pastry.jpg" alt="Fresh pastry">
+                        <div class="menu-item-content">
+                            <h3>Pastry</h3>
+                            <p class="menu-item-description">Freshly baked croissant or muffin</p>
+                            <span class="price">$3.00</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hours Section -->
+        <section class="hours" id="hours">
+            <div class="container">
+                <h2>Opening Hours</h2>
+                <div class="hours-content">
+                    <div class="hours-day">
+                        <span>Monday - Friday:</span>
+                        <span>6:00 AM - 8:00 PM</span>
+                    </div>
+                    <div class="hours-day">
+                        <span>Saturday - Sunday:</span>
+                        <span>7:00 AM - 9:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location" id="location">
+            <div class="container">
+                <h2>Our Location</h2>
+                <div class="location-content">
+                    <div class="location-info">
+                        <address>
+                            Cozy Corner Coffee Shop<br>
+                            123 Coffee Street<br>
+                            Seattle, WA 98101<br>
+                            United States
+                        </address>
+                        <p>Phone: <a href="tel:+15551234567">+1-555-123-4567</a></p>
+                    </div>
+                    <div class="location-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.20653480388!2d-122.3321!3d47.6062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906f1cfc77e44d%3A0xdc6b33f5a6d8e4e!2s123+Coffee+St%2C+Seattle%2C+WA+98101!5e0!3m2!1sen!2sus!4v1612345678901" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Map showing Cozy Corner Coffee Shop location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required aria-describedby="name-error">
+                        <div class="error-message" id="name-error" role="alert"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required aria-describedby="email-error">
+                        <div class="error-message" id="email-error" role="alert"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+                        <div class="error-message" id="message-error" role="alert"></div>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                    <div class="form-success" id="form-success" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Cozy Corner Coffee Shop. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+            <button class="back-to-top" aria-label="Back to top">↑</button>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
